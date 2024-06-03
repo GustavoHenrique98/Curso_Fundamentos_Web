@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxSizing </title>
+    <style>
+        body{
+            font-family:sans-serif;
+        }
+        p{
+            background: #ccc;
+            width: 500px;
+        }
+        .p1{
+            padding: 25px;
+        
+        }
+
+        .p2{
+            padding: 25px;
+            border: 10px solid green;
+        }
+        .p3{
+            padding: 25px;
+            border: 10px solid green;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Box Sizing</h1>
+    <!-- O box-sizing muda o comportamente padrão do padding nos elementos
+        o comportamento padrão é que quando utilizamos padding dentro de um elemento o valor que definimos no padding , soma nos quatro lados do elementos , ou seja se eu dou um padding de 25 pixels , 
+        e meu elemento tem 100 , logo com o padding ele possuirá 200 de largura 
+        ganhando 100 de largura e altura .
+
+        valor padrão :
+        content-box: Valor padrão ,  a largura do meu elemento e referente ao conteúdo.
+        
+        
+    -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas quis eum ut voluptatum perferendis maiores ducimus et. Sed quod error mollitia assumenda, sunt tempora! Quasi a voluptates incidunt iste quia placeat veritatis neque beatae ipsa omnis nemo ad tempore unde quo odio ratione porro sapiente natus sed, inventore necessitatibus quis.
+    </p>
+    <p class="p1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas quis eum ut voluptatum perferendis maiores ducimus et. Sed quod error mollitia assumenda, sunt tempora! Quasi a voluptates incidunt iste quia placeat veritatis neque beatae ipsa omnis nemo ad tempore unde quo odio ratione porro sapiente natus sed, inventore necessitatibus quis.
+    </p>
+    <p class="p2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas quis eum ut voluptatum perferendis maiores ducimus et. Sed quod error mollitia assumenda, sunt tempora! Quasi a voluptates incidunt iste quia placeat veritatis neque beatae ipsa omnis nemo ad tempore unde quo odio ratione porro sapiente natus sed, inventore necessitatibus quis.
+    </p>
+    <p class="p3"> 
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas quis eum ut voluptatum perferendis maiores ducimus et. Sed quod error mollitia assumenda, sunt tempora! Quasi a voluptates incidunt iste quia placeat veritatis neque beatae ipsa omnis nemo ad tempore unde quo odio ratione porro sapiente natus sed, inventore necessitatibus quis.
+    </p>
+</body>
+</html>

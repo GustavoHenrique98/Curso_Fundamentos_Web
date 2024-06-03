@@ -1,0 +1,37 @@
+body{
+    background-color:gray;
+}
+h1{
+    color:red;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:104px;
+}
+h2{
+    font-size:48px;
+    font-style:italic;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:normal;
+}
+
+/*O text-transform:capitalize pega a primeira letra de cada texto e coloca em maíusculo*/
+h3{
+    font-size: 38px;
+    text-transform:capitalize;
+    text-align: center;
+    background-color:blue;
+    color: white;
+    
+}
+
+p{
+    font-size:28px;
+    text-align: left;
+    text-indent:28px;
+    color:#0000ff;
+    font-weight:bold;
+    
+}
+p a{
+    text-decoration:none;
+    
+}

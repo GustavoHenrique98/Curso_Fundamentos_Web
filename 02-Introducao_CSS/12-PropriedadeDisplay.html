@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade Display</title>
+    <style>
+        span{
+            background: yellow;
+        }
+        #block{
+            background: red;
+            border: 1px solid black;
+            margin-top:10px;
+        }
+        #inlineB{
+            background-color:green;
+            border: 1px solid black;
+            display: inline-block;
+            margin-top:10px ;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Propriedade display
+        A propriedade display altera o comportamento do elemento .
+        tipos de valores para propridade display:
+        Block:
+        (padrão) O elemento ocupa 100% do tamanho disponível do elemento pai.
+        e vão gerar uma quebra de linha (sendo agrupados sempre um abaixo do outro).
+
+        Inline:Sendo agrupados sempre um ao lado do outro.
+        não é possivel alterar largura e altura destes elementos, nem setar margin-top nem bottom,
+        apenas para esquerda e direita , a largura do elemento vai de acordo com o conteúdo.
+        
+        
+        Inline-block : Geram quebra de linha quando chegam no limite da largura do elemento pai , 
+        os elementos se comportam de maneira híbrida,
+        a largura do elemento por padrão é a quantidade de conteúdo , são alinhados um ao lado do outro
+        e a diferença principal , é que podemos setar , largura , altura e usar o margin livremente.
+
+        diplay:none - Propriedade para fazer o elemento não aparecer (none significa nenhum)
+    
+    -->
+    <span>Elemento Inline</span>
+    <span>Elemento Inline2</span>
+    <span>Elemento Inline3</span>
+    <span>Elemento Inline4</span>
+    <span>Elemento Inline5</span>
+    <span>Elemento Inline6</span>
+    <span>Elemento Inline7</span>
+    <span>Elemento Inline8</span>
+    <span>Elemento Inline9</span>
+    <span>Elemento Inline10</span>
+    <span>Elemento Inline11</span>
+    <span>Elemento Inline12</span>
+    <span>Elemento Inline13</span>
+    <span>Elemento Inline14</span>
+    <span>Elemento Inline15</span>
+    <div id="block">Elementos do tipo bloco são organizados um abaixo do outro e ocupam 100% do espaço disponível do elemento pai.</div>
+    <div id="block">Elementos do tipo bloco são organizados um abaixo do outro e ocupam 100% do espaço disponível do elemento pai.</div>
+    <div id="block">Elementos do tipo bloco são organizados um abaixo do outro e ocupam 100% do espaço disponível do elemento pai.</div>
+    <div id="block">Elementos do tipo bloco são organizados um abaixo do outro e ocupam 100% do espaço disponível do elemento pai.</div>
+    <div id="inlineB"> Elemento div setado com Display:inline-block </div>
+    <div id="inlineB"> Elemento div setado com Display:inline-block </div>
+    <div id="inlineB"> Elemento div setado com Display:inline-block </div>
+    <div id="inlineB"> Elemento div setado com Display:inline-block </div>
+    <div id="inlineB"> Elemento div setado com Display:inline-block </div>
+    <div id="inlineB"> Elemento div setado com Display:inline-block </div>
+    <div id="inlineB"> Elemento div setado com Display:inline-block </div>
+    <div id="inlineB"> Elemento div setado com Display:inline-block; </div>
+    <div id="inlineB"> Elemento div setado com Display:inline-block; </div>
+    <div id="inlineB"> Elemento div setado com Display:inline-block; </div>
+    <div id="inlineB"> Elemento div setado com Display:inline-block; </div>
+    <div id="inlineB"> Elemento div setado com Display:inline-block; </div>
+
+</body>
+</html>

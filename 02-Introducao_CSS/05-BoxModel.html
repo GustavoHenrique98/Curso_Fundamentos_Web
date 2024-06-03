@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang=" pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Width e Height</title>
+    <style>
+        body{
+            font-family:'Courier New', Courier, monospace
+        }
+        p{
+            background-color:#ccc;
+        }
+        h1{
+            background-color:#dacc08;
+        }
+        h2{
+            background-color:#05b649;
+            width:50%;
+            height:100px;
+        }
+        #exemplo{
+            width:50%;
+            height:250px;
+            border: 1px solid black;
+            background-color:gray;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        O modelo de caixa(box model) nada mais é do que o nosso elemento HTML se comportar como uma caixa.
+        propriedades do box model.
+        
+        width:largura do elemento.
+        margin: margem referente a um espaçamento ao redor do elemento.
+        padding: preenchimento 
+        border: borda
+        outline: contorno
+
+        Unidades de medida:
+        Px: Pixel (medida fixa)
+        %: porcentagem é referente a largura do elemento pai.
+        
+
+        Tipos de elementos:
+         block: Segue o fluxo padrão do documento html e ocupa toda largura disponível do elemento pai
+         
+         inline: São organizados na linha horizontal do documento HTML e ocupa apenas o conteudo do texto 
+         nao permitindo que o usuário defina nem altura, nem largura , nem aplique margin-top nem bottom ,apenas left e right.
+
+
+
+
+
+    -->
+    <h1>Box model</h1>
+    <h2>Width e Height</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    
+    <div id="exemplo">
+
+        Exemplo para aula.
+    </div>
+
+
+</body>
+</html>

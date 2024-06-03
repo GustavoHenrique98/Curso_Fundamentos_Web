@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Folhas de estilo em cascata aula 01">
+        <meta name="author" content="Gustavo Henrique Pereira Silva">
+        <meta name="keywords" content="css, folhas de estilo">
+        <title>Folhas de estilo em cascata</title>
+    </head>
+    <body>
+        <!-- O que é css?
+            Cascating style sheets  : Folhas de estilo em cascata , serve para trabalhar com a parte
+            visual do documento HTML.
+            Em css para modificarmos algum elemento, utilizamos seletores para selecionar uma tag 
+            e passamos a formatação em chaves com propriedades e valores.
+            Exemplo : 
+            h1{
+                propriedade:valor;
+                color:blue;
+            }
+
+            Tipos de inclusão de arquivos CSS:
+            Inline : Utilizamos para declarar uma formatação CSS diretamente na tag atraves do atributo style="aqui dentro utilize css".
+            internal : Criamos uma tag <style> </style> dentro do head e aplicamos as formatações dentro dela.
+            External: Criamos dentro do <head> </head> um link para linkar um arquivo CSS externo,
+            desta forma : <link rel="stylesheet" href="diretório do arquivo ou link ">
+
+
+            #Seletores de elemento
+            
+            Exemplo : Selecionar todos os elementos P 
+            p{
+                color: blue; ===> Todos os elementos dentro da tag <p> do documento serão da cor azul.
+            }
+            
+            # Seletores através do atributo class ="" 
+                O atributo class possibilita que o desenvolvedor crie nomes para formatações especificas de um
+                determinado elemento , é basicamente uma marcação personalizada e específica para vários elementos.
+                exemplo:
+               
+                    <ul> 
+                        <li class="colorirTexto">Texto1 </li>  
+                        <li class="colorirTexto">Texto1 </li>  
+                        <li class="colorirTexto">Texto1 </li>  
+                    </ul> 
+
+                    No css todas essas tags <li> serão modificadas com a formatação de class desta forma:
+                        .colorirTexto{
+                            color:red;
+                    }
+
+            #Seletores através do atributo ID
+              Usa a mesma lógica da classe a diferença é que utilizando ID's a diferença é que só pode exisitr um ID na página
+                marcando um elemento e utilizamos a notação # para formatar o elemento exemplo:
+
+                <div id="cont__principal">
+                </div>
+                
+                no css:
+                #cont__principal{
+                    display:flex;
+                }
+
+
+            #PROPRIEDADE FONT
+                1- font-family: Formata o tipo de fonte (familia)
+                ex: font-family : "Roboto" , sans-serif;
+                
+                2- font-size : Formata o tamanho da letra.
+                ex:font-size:20px;
+                
+                3- font-style: serve para declarar se uma fonte vai ser em itálico ou não.
+                ex: font-style:italic;
+
+                4- font-weight: (peso da fonte ) serve para aplicar uma profundidae na letra(negrito)
+                exemplo: font-weight:bold;
+
+            #Propriedade TEXT:
+            
+                1- text-align : (alinhar texto)
+
+                2- text-decoration : (decorar texto) 
+
+                3- text-indent : (indentar texto)
+
+                4- text-transform : (transformar texto)
+
+                5- color : (cor - colorir texto )
+
+                
+                
+
+        -->
+    </body>
+</html>
