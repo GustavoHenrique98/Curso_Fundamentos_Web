@@ -16,19 +16,23 @@ main{
     width: 70%;
     margin: auto;
 }
-.titulosH2{
-    background: gray;
-    color: rgb(9, 9, 71);
-    padding-left: 5px;
-    box-sizing: border-box;
-    border-bottom:2px solid rgb(9, 9, 71);
+.titulo_section{
+    color: rgb(8, 8, 109);
+    background-color: rgb(151, 145, 145);
     padding: 10px;
+    border-bottom: 3px solid rgb(8, 8, 109);
 }
-.itensLista{
-    list-style-type: none;
-    text-indent: -40px;
-    margin: 10px 0px;
+
+h3{
+    color: rgb(36, 33, 33);
 }
-.negritoAzul{
+
+.subtitulo_section{
     color: blue;
 }
+
+.texto__negrito{
+    color: rgb(58, 53, 53);
+}
+
+
