@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos de lista</title>
+    <style>
+        ul {
+            list-style-type:square;
+            list-style-position: inside;
+        }
+        ol li {
+            list-style-type: upper-alpha;
+            list-style-position:inside;
+            list-style: upper-alpha inside url('https://www.freeiconspng.com/uploads/16x16-information-icon-png-transparent-1.png');
+        }
+    </style>
+</head>
+<body>
+    <!-- Alterando aparencia da lista com list-style type.
+        propriedades:
+
+        list-style-type:alterar a aparencia dos bullets da lista.
+        list-style-position: altera 
+        list-style-image: insere uma imagem no lugar dos bullets da lista(quadradinhos da lista)
+
+        podemos simplesmente incluir essas 3 propriedades em uma só
+        ex: list-style: upper-alpha inside url('endereço da imagem');
+        obs: usei essa imagem fora de esquadro só pra exemplificar mesmo.
+    
+    -->
+    <h1>List-style-type : CSS</h1>
+
+    <ul>
+        <li>Texto1</li>
+        <li>Texto2</li>
+        <li>Texto3</li>
+    </ul>
+
+    <ol>
+        <li>Texto1</li>
+        <li>Texto2</li>
+        <li>Texto3</li>
+    </ol>
+</body>
+</html>

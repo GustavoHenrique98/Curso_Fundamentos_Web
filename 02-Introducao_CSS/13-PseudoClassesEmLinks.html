@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoClasses em links</title>
+    <style>
+        #linkVisited{
+            background: blue;
+        }
+        #linkHover:hover{
+            background: green;
+            color: white;
+        }
+        #linkActive:active{
+            background:black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        
+        OBS: RESUMI O CONTEÚDO O PROFESSOR ENROLOU MTO PRA ENSINAR ISSO.
+       Uma pseudo-classe CSS é uma palavra-chave adicionada a seletores que especifica um estado especial do elemento selecionado. 
+       Por exemplo, :hover pode ser usado para alterar a cor de um botão quando o usuário passar o cursor sobre ele.
+     
+       #Pseudo Classes
+       a:link - estado normald e um link
+       a:visited - estado após o link ser visitado.
+       a:hover - estado após passar o mouse por cima do link.
+       a:active - estado que acontece quando clicamos em um link.
+
+        Exemplos abaixo:
+    -->
+    <h1>Links</h1>
+    <h2>Padrão</h2>
+    <a href="#" id="Link Padrão">Padrão</a>
+    <h2>Visitado</h2>
+    <a href="#" id="linkVisited"> Visitado</a>
+    <h2>Ao passar o mouse por cima</h2>
+    <a href="#" id="linkHover"> Hover</a>
+    <h2>Quando o link é clicado(ativo)</h2>
+    <a href="#" id="linkActive"> Quando Clicado</a>
+    
+</body>
+
+</html>
