@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background VS background-image</title>
+    <style>
+        body{
+            background: yellow url('imagens/tile-pattern.png') no-repeat center center cover;
+            background-color: red;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Resumindo , pode dar bug na parte de especificação hierárquica 
+    background aceita varios valores (image-size-repeat-attachment-color etc...)
+    já o background-image entre outros , são valores específicos ....
+    que caso você usar após um background , o ultimo valor sempre irá prevalecer devido a 
+    uma questão de herança de espcificidade .
+
+-->
+
+
+</body>
+</html>
