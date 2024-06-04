@@ -9,9 +9,29 @@ body{
 }
 #topo p{
     text-align: center;
-    margin-bottom: 40px;
 }
-
+#topo nav{
+    padding: 0px 0px 10px 0px;
+    box-sizing: border-box;
+}
+#topo ul{
+    display: flex;
+    flex-direction: row-reverse;
+    list-style-type: none;
+}
+.linksTopo{
+    text-decoration: none;
+    padding: 10px;
+    background: rgb(172, 167, 167);
+    margin: 0px 5px;
+    color: black;
+    border-radius: 5px;
+}
+.linksTopo:hover{
+    background: gray;
+    color: white;
+    transition: 0.8s;
+}
 main{
     width: 70%;
     margin: auto;
