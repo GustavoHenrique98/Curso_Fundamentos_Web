@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(179, 177, 177);
+}
+#topo_site{
+    border: 1px solid black;
+    position: relative;
+    height: 80%;
+    background-image: url("imagens/bg-3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#nav_menu ul{
+    display: flex;
+    flex-direction: row-reverse;
+    list-style-type: none;
+    border: 1px solid blue;
+    
+}
+h1{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    color: rgb(245, 239, 239);
+    text-shadow: 2px 2px rgb(20, 20, 20);
+    font-size: 40px;
+
+}
+#link_header{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-decoration:none;
+    background: rgba(0, 0, 0, 0.521);
+    color: white;
+    border-bottom: 2px solid white;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+
+#tecnologias{
+    margin: 15px auto;
+    width: 70%;
+
+}
+
+.cont_articles{
+    margin: 15px 0px;
+    background-color: rgb(236, 229, 229);
+    padding: 10px;
+    border-radius: 5px;
+}
+.titulos_articles{
+    padding: 10px;
+    background: rgb(221, 217, 217);
+    border-bottom: 2px solid rgb(212, 207, 207);
+    border-radius: 7px;
+}
+.cont_articles p{
+    margin: 15px 0px;
+    line-height: 1.5;
+    
+}
+.links_articles{
+    background-color:gray;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 15px 0px;
+    color: white;
+}
+
+
+
+
+
+#rodape_site{
+    text-align: center;
+    padding: 20px 0px;
+    background: gray;
+    color: white;
+}
