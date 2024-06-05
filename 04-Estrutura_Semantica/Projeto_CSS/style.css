@@ -21,8 +21,17 @@ body,html{
     display: flex;
     flex-direction: row-reverse;
     list-style-type: none;
-    border: 1px solid blue;
     
+    padding: 20px 60px;
+    
+}
+#nav_menu ul li a{
+    padding: 10px;;
+    border: 1px solid white;
+    background: gray;
+    text-decoration: none;
+    margin: 0px 10px;
+    color: white;
 }
 h1{
     position: absolute;
@@ -79,6 +88,8 @@ h1{
     margin: 15px 0px;
     color: white;
 }
+
+
 
 
 
