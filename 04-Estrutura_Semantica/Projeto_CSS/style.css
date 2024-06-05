@@ -14,7 +14,8 @@ body,html{
     height: 80%;
     background-image: url("imagens/bg-3.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: right center;
+    background-repeat: no-repeat;
 }
 
 #nav_menu ul{
@@ -41,6 +42,7 @@ h1{
     color: rgb(245, 239, 239);
     text-shadow: 2px 2px rgb(20, 20, 20);
     font-size: 40px;
+    text-transform: uppercase;
 
 }
 #link_header{
