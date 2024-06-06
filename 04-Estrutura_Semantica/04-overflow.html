@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            padding:16px;
+            width: 300px;
+            height:300px;
+            margin-top: 20px;
+            background-color: rgba(255, 0,0, 0.5);
+        }
+
+        .item{
+            background-color: violet;
+            margin-bottom: 10px;
+            border: 1px solid black;
+        }
+
+        .fit-content .item{
+            width:fit-content;
+        }
+        .min-content .item{
+            width:min-content;
+        }
+        .max-content .item{
+            width:max-content;
+        }
+        .overFlow-Hidden{
+            overflow: hidden;
+        }
+        .overflowScroll{
+            overflow:scroll;
+        }
+        .overflow-auto{
+            overflow: auto; 
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- overflow.
+        A propriedade overflow- serve para tratar o conteúdo que excede o elemento.
+        valores:
+        hidden:esconde o conteúdo que está vazando da div no eixo x e y.
+        scroll : adiciona uma barra de scroll visível independente se o elemento ultrapassa ou não a largura ou altura do elemento (x,y).
+        podemos definir onde queremos essa barra vertical , seja no eixo x ou Y.
+        exemplo: overflow-x:scroll; -  adiciona  a barra de rolagem visível no eixo horizontal.
+        overflow-y:scroll; -  adiciona  a barra de rolagem visível no eixo vertical.
+        overflow:auto; faz a mesma coisa que o overflow scroll mas somente quando o conteúdo excede a largura ou altura do elemento.
+        (também podemos setar vertical e horizontal)
+
+        
+    -->
+    <h1>Propriedade overflow e seus valores.</h1>
+
+    <h2>Overflow:hidden;</h2>
+    <p>Esconde o conteúdo que está vazando da DIV no eixo x e y</p>
+    <div class="container fit-content overFlow-Hidden">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, accusamus.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto quos voluptate consequuntur culpa sunt magnam voluptatem at vel eligendi. Qui corrupti eius numquam iusto repellendus?
+        </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus exercitationem sint obcaecati corporis. Veniam repellendus quisquam optio, quis obcaecati rerum! Voluptatibus est debitis facere? Magnam consequuntur aut doloribus excepturi debitis est ex labore fugit aliquid quidem ullam reiciendis atque, at, qui ratione. Pariatur laboriosam totam error consectetur, dignissimos porro fugit deserunt tempore numquam doloremque sit nihil? Praesentium non, a perspiciatis eveniet ab velit nostrum dignissimos consequuntur molestiae est aliquid dolorem architecto placeat quos ad in!</div>
+        
+    </div>
+
+    <h2>overflow:scroll;</h2>
+    <p>Adiciona uma barra de rolagem visível no eixo x e y (horizonta e vertical) para aparecer o conteúdo que está vazando do elemento.</p>
+    <div class="container min-content overflowScroll">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, accusamus.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto quos voluptate consequuntur culpa sunt magnam voluptatem at vel eligendi. Qui corrupti eius numquam iusto repellendus?
+        </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus exercitationem sint obcaecati corporis. Veniam repellendus quisquam optio, quis obcaecati rerum! Voluptatibus est debitis facere? Magnam consequuntur aut doloribus excepturi debitis est ex labore fugit aliquid quidem ullam reiciendis atque, at, qui ratione. Pariatur laboriosam totam error consectetur, dignissimos porro fugit deserunt tempore numquam doloremque sit nihil? Praesentium non, a perspiciatis eveniet ab velit nostrum dignissimos consequuntur molestiae est aliquid dolorem architecto placeat quos ad in!</div>
+        
+    </div>
+    
+    <h2>OverFlow auto</h2>
+    <p> Adiciona uma barra de rolagem automática no eixo x e y caso o conteúdo supere o tamanho do elemento (scroll automático) </p>
+    <div class="container max-content overflow-auto">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, accusamus.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto quos voluptate consequuntur culpa sunt magnam voluptatem at vel eligendi. Qui corrupti eius numquam iusto repellendus?
+        </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus exercitationem sint obcaecati corporis. Veniam repellendus quisquam optio, quis obcaecati rerum! Voluptatibus est debitis facere? Magnam consequuntur aut doloribus excepturi debitis est ex labore fugit aliquid quidem ullam reiciendis atque, at, qui ratione. Pariatur laboriosam totam error consectetur, dignissimos porro fugit deserunt tempore numquam doloremque sit nihil? Praesentium non, a perspiciatis eveniet ab velit nostrum dignissimos consequuntur molestiae est aliquid dolorem architecto placeat quos ad in!</div>
+        
+    </div>
+    
+
+</body>
+</html>

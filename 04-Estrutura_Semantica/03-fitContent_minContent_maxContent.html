@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit-content - min-content - max-content</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            padding:16px;
+            width: 300px;
+        }
+
+        .item{
+            background-color: violet;
+            margin-bottom: 10px;
+            border: 1px solid black;
+        }
+
+        .fit-content .item{
+            width:fit-content;
+        }
+        .min-content .item{
+            width:min-content;
+        }
+        .max-content .item{
+            width:max-content;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fit content: mantém o display atual do elemento , mas a     largura do conteúdo e que será a largura do bloco.
+         min-content: Pega o tamanho da maior palavra de cada bloco.
+         e vai colocar na largura do meu bloco todo.
+
+        max-content: A maior largura possível do elemento dependendo do conteúdo.
+        
+        Resumindo:
+
+        min-content: Tamanho mínimo sem quebrar palavras.
+        max-content: Tamanho máximo para acomodar todo o conteúdo.
+        fit-content: Ajusta ao conteúdo com um limite máximo especificado.
+        
+    -->
+    <div class="container fit-content">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, accusamus.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto quos voluptate consequuntur culpa sunt magnam voluptatem at vel eligendi. Qui corrupti eius numquam iusto repellendus?
+        </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus exercitationem sint obcaecati corporis. Veniam repellendus quisquam optio, quis obcaecati rerum! Voluptatibus est debitis facere? Magnam consequuntur aut doloribus excepturi debitis est ex labore fugit aliquid quidem ullam reiciendis atque, at, qui ratione. Pariatur laboriosam totam error consectetur, dignissimos porro fugit deserunt tempore numquam doloremque sit nihil? Praesentium non, a perspiciatis eveniet ab velit nostrum dignissimos consequuntur molestiae est aliquid dolorem architecto placeat quos ad in!</div>
+        
+    </div>
+
+
+    <div class="container min-content">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, accusamus.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto quos voluptate consequuntur culpa sunt magnam voluptatem at vel eligendi. Qui corrupti eius numquam iusto repellendus?
+        </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus exercitationem sint obcaecati corporis. Veniam repellendus quisquam optio, quis obcaecati rerum! Voluptatibus est debitis facere? Magnam consequuntur aut doloribus excepturi debitis est ex labore fugit aliquid quidem ullam reiciendis atque, at, qui ratione. Pariatur laboriosam totam error consectetur, dignissimos porro fugit deserunt tempore numquam doloremque sit nihil? Praesentium non, a perspiciatis eveniet ab velit nostrum dignissimos consequuntur molestiae est aliquid dolorem architecto placeat quos ad in!</div>
+        
+    </div>
+
+    <div class="container max-content">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, accusamus.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto quos voluptate consequuntur culpa sunt magnam voluptatem at vel eligendi. Qui corrupti eius numquam iusto repellendus?
+        </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus exercitationem sint obcaecati corporis. Veniam repellendus quisquam optio, quis obcaecati rerum! Voluptatibus est debitis facere? Magnam consequuntur aut doloribus excepturi debitis est ex labore fugit aliquid quidem ullam reiciendis atque, at, qui ratione. Pariatur laboriosam totam error consectetur, dignissimos porro fugit deserunt tempore numquam doloremque sit nihil? Praesentium non, a perspiciatis eveniet ab velit nostrum dignissimos consequuntur molestiae est aliquid dolorem architecto placeat quos ad in!</div>
+        
+    </div>
+</body>
+</html>
