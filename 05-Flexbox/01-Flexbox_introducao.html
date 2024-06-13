@@ -3,40 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox</title>
+    <title>Introdução a flex box</title>
     <style>
-        #flex-container{
+        #container{
             display: flex;
-            background-color:black;
-            padding: 30px;
+            background-color:yellow;
+            border:3px solid white;
+            width:500px;
+            height: 300px;
+            margin: 0 auto;;
         }
-        .flex-itens{
-            background-color:red;
-            border: 3px solid white;
-            width: 300px;
-            height: 150px;
-            margin: 20px;
-            font-size: 25px;
+
+        .flexItens{
+            margin: 10px;
+            width: 200px;
+            border: 2px solid white;
+            background-color: rgb(143, 137, 137);
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h1{
             text-align: center;
         }
+        p{
+            text-align: center;
+        }
+    
     </style>
 </head>
 <body>
-    <!-- A propriedade display:flex;
-        alinha os elementos filhos em determinada direção , 
-        a característia principal é que essa propriedade é aplicada 
-        no elemento pai dos elementos,  e seus filhos diretos
-        se tornam flex-itens , ou seja o elemento pai se torna um flex-container
-        e seus filhos são influenciados diretamente  por essa mudança,
-        assim proporcionando uma forma menos verbosa de alinhar elementos
-        e criar layouts com css. 
-    -->
+    <!-- 
+       # O que é flexbox?
+         - Display:flex;
+         É aplicada no elemento pai (container) e os filhos diretos irão se tornar flex itens.
+         sendo alinhados inicialmente na horizontal(um ao lado do outro)  
 
-        <div id="flex-container">
-            <div class="flex-itens">flex-item1</div>
-            <div class="flex-itens">flex-item2</div>
-            <div class="flex-itens">flex-item3</div>
-        </div>
+         os itens irão se ajustar a largura e altura do container e caso adicionar mais caso ultrapasse muito 
+         a largura do container ele vai quebrar o layout mesmo sendo flexível.
 
+    --> 
+
+    <h1>Demonstração do flexbox</h1>
+    <p>
+        É aplicada no elemento pai (container) e os filhos diretos irão se tornar flex itens.
+        sendo alinhados inicialmente na horizontal(um ao lado do outro)  
+
+        os itens irão se ajustar a largura e altura do container e caso adicionar mais caso ultrapasse muito 
+        a largura do container ele vai quebrar o layout mesmo sendo flexível.
+
+    </p>
+    <div id="container">
+        <div class="flexItens">Flex item 1</div>
+        <div class="flexItens">Flex item 2</div>
+        <div class="flexItens">Flex item 3</div>
+        <div class="flexItens">Flex item 4</div>
+        <div class="flexItens">Flex item 5</div>
+        <div class="flexItens">Flex item 6</div>
+        <div class="flexItens">Flex item 7</div>
+    </div>
 </body>
 </html>
