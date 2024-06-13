@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content align-items e align-content</title>
+    <style> 
+        .flexbox{
+            display: flex;
+            border: 3px solid red;
+            width: 500px;
+            height: 250px;
+            margin: auto;
+            }
+
+        .flexbox div{
+            border: 2px solid orange;
+            width: 150px;
+            margin: 15px;
+        }
+
+        .flex-container1{
+            /* flex-wrap:wrap;
+            flex-direction:row; */
+            flex-flow:row wrap;
+            margin-top: 10px;
+        }
+
+        .flex-container2{
+           justify-content: space-around;
+        }
+        .flex-container2 div{
+            width: 30px;
+            margin: 0;
+        }
+
+        .flex-container3{
+            justify-content: space-around;
+            align-items: flex-end;
+        }
+
+        .flex-container3 div{
+            width: 30px;
+            margin: 0;
+        }
+        
+        .flex-container4{
+            justify-content: space-evenly;
+            align-items: baseline;
+        }
+
+        .flex-container4 div{
+            width: 30px;
+            margin: 0;
+        }
+
+        .flex-container5{
+            justify-content: center;
+            align-items: flex-end;
+            align-content: flex-start;
+            flex-wrap:wrap;
+        }
+
+        .flex-container5 div{
+            width: 50px;
+        }
+
+        
+        
+            
+    </style>
+</head>
+<body>
+    <!-- Nota o display flex não afeta o container, e sim seus filhos.
+        o display flex distribui a largura dos flex-itens de acordo com a largura disponível
+        tornando eles flexíveis e adaptáveis.
+
+        propriedades:
+
+        display:flex => torna os elementos filhos de um elemento pai flexiveis e adaptáveis 
+        a largura disponível.
+
+        flex-direction:
+        direção flexível , utilizada para alinhar os elementos
+        sendo em formato de linha seguindo a ordem dos elementos.
+        tendo como propriedade default o valor row.
+        e row-reverse..
+
+        flex-direction:row-reverse;
+        flex-direction:row; (default)
+        flex-flow: um atalho para colocar os (flex-direction) , (flex-wrap)
+        sendo o primeiro valor o flex-direction e o segundo valor o flex-wrrap => valor dessas propriedades.
+        mesma coisa para ordenar os itens um abaixo dos outros;
+        flex-direction:column => um abaixo do outro 
+        flex-direction:column-reverse;
+
+
+
+
+    -->
+    <div class="flexbox flex-container1">
+        <div id="div1">1</div>
+        <div id="div2">2</div>
+        <div id="div3">3</div>
+        <div id="div4">4</div>
+    </div>
+    
+    <div class="flexbox flex-container2">
+        <div id="div">1</div>
+        <div id="div2">2</div>
+        <div id="div3">3</div>
+        <div id="div4">4</div>
+    </div>
+
+    <div class="flexbox flex-container3">
+        <div id="div">1</div>
+        <div id="div2">2</div>
+        <div id="div3">3</div>
+        <div id="div4">4</div>
+    </div>
+
+    <div class="flexbox flex-container4">
+        <div id="div">1</div>
+        <div id="div2" style="font-size:36px;">2</div>
+        <div id="div3">3</div>
+        <div id="div4">4</div>
+    </div>
+
+    <div class="flexbox flex-container5">
+        <div id="div">1</div>
+        <div id="div2">2</div>
+        <div id="div3">3</div>
+        <div id="div4">4</div>
+    </div>
+
+</body>
+</html>

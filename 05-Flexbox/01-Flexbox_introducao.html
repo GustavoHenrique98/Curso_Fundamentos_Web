@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        #flex-container{
+            display: flex;
+            background-color:black;
+            padding: 30px;
+        }
+        .flex-itens{
+            background-color:red;
+            border: 3px solid white;
+            width: 300px;
+            height: 150px;
+            margin: 20px;
+            font-size: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- A propriedade display:flex;
+        alinha os elementos filhos em determinada direção , 
+        a característia principal é que essa propriedade é aplicada 
+        no elemento pai dos elementos,  e seus filhos diretos
+        se tornam flex-itens , ou seja o elemento pai se torna um flex-container
+        e seus filhos são influenciados diretamente  por essa mudança,
+        assim proporcionando uma forma menos verbosa de alinhar elementos
+        e criar layouts com css. 
+    -->
+
+        <div id="flex-container">
+            <div class="flex-itens">flex-item1</div>
+            <div class="flex-itens">flex-item2</div>
+            <div class="flex-itens">flex-item3</div>
+        </div>
+
+</body>
+</html>

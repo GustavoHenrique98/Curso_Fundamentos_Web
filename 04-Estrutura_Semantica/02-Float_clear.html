@@ -4,8 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Float e clear</title>
+    <style>
+        .div1{
+            float:right;
+            background:red;
+            width: 300px;
+            height:200px;
+            margin-left: 10px;
+            text-align:center;
+            padding: 10px;
+        }
+        .div2{
+            float:right;
+            background:green;
+            width: 300px;
+            height:200px;
+            margin-left: 10px;
+            text-align:center;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     <h1>float e clear</h1>
+    <!-- Usamos float para tirar o elemento do fluxo padrão do documento,
+         podemos mover o elemento para direita ou para esquerda.
+         e após isso para limpar esse fluxo flutuante do float utilizamos o clear:both;
+        da forma como vamos ver abaixo.
+
+         
+         -->
+        <div class="div1">
+            ELEMENTO FLUTUANTE 1
+        </div>
+        
+        <div class="div2">
+            ELEMENTO FLUTUANTE 2
+        </div>
+
+        <!-- 
+            Esta div foi criada para limpar o fluxo do documento e nossos proximos elementos
+            criados obterem o comportamento normal.
+         
+         -->
+        <div style="clear:both">
+            terceira div
+        </div>
+
 </body>
 </html>
