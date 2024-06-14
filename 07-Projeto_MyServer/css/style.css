@@ -1,0 +1,116 @@
+/*Reset css*/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(11, 2, 43);
+}
+/*Cabeçalho*/
+#topo_site{
+    background-color: rgb(12, 11, 14);
+    color: white;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin: auto;
+}
+
+#list_container{
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+.list_item{
+    width: fit-content;
+}
+.list_item a:hover{
+    background-color: rgb(220, 243, 9);
+    color: black;
+    border-radius: 5px;
+}
+.list_item a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+}
+
+
+/*Conteudo principal*/
+main{
+    margin: auto;
+    width: 70%;
+    
+}
+#planos div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+#letreiro_planos{
+    /* color: white; */
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px 0px;
+    font-size: 50px;
+    margin-top: 10px;
+    color: white;
+    text-shadow: 0px 2px 8px black;
+}
+
+.box_content{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 300px;
+    background-color: rgba(63, 63, 65, 0.548);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 7px;
+   
+
+}
+.letreiros_conteudo{
+    border-bottom: 3px solid rgb(220, 243, 9);
+    text-transform: uppercase;
+    font-size: 25px;
+
+}
+.box_content ul{
+    padding-left: 20px;
+}
+.box_content ul li::marker{
+    color: rgba(220,243,9);
+    font-size: 20px;
+}
+.box_content p{
+    font-size: 25px;
+}
+.box_content p span{
+    font-size:18px;
+}
+
+.assinatura{
+    text-transform: uppercase;
+    text-decoration:none;
+    background: rgb(220, 243, 9);
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+.lista_beneficios{
+    height: 100px;
+}
+.lista_beneficios li{
+    font-size: 15px;
+}
