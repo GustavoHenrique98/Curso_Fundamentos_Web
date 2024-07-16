@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> em fora do font-size  </title>
+        <style>
+            html{
+                /*Equivale a 10px;*/
+                font-size:62.5%;
+                padding-bottom: 550px;
+            }
+
+            h1{
+                /* Equivale a 24 pixels  */
+                font-size:2.4em;
+            }
+            
+            
+            p b{
+                color: red;
+                font-size:1em;
+                /* 30px */
+                font-size:3rem;
+                /* 30px */
+                font-size:50%;
+            }
+            p{
+                font-size:3em;
+                /*equivale a 30px*/
+                width: 10em;
+                background-color:#ccc;
+            }
+
+            #porcentagem{
+                width:60%;
+                height: 500px;
+                background-color:yellow;
+            }
+            #porcentagem p{
+                background:orange;
+                padding-top: 50%;
+                width: 50%;
+                font-size: 3rem;
+            }
+            #padding_em{
+                background-color: red;
+                width: 500px;
+                border: 1px solid black;
+               
+            }
+            
+            #padding_em P{
+                background-color: yellow;
+                font-size: 30px;
+                padding:1em; 
+                /*30px*/
+            }
+           
+        </style>
+    </head>
+    <body>
+        <h1>Unidades de medida</h1>
+        <h2>EM</h2>
+        <p>
+            Lorem ipsum <b> Texto em negrito </b>dolor sit, amet consectetur adipisicing elit. Repellendus ullam sit deleniti quis assumenda saepe est autem harum, odit quibusdam eveniet, ipsa quae ab illo exercitationem debitis consectetur corrupti voluptatibus.
+        </p>
+        <div id="porcentagem">
+           <p>
+              %.
+           </p> 
+        </div>
+
+        <!-- elemento pai desse elemento filho é o body que vale 10pixels -->
+        <div id="padding_em">
+            <p>Padding com EM</p>
+
+        </div>
+
+        <!-- Resumindo !!!
+         
+            9 minutos de aula para mostrar que temos a possibilidade de linkar
+            a quantidade de padding e margin com o tamanho da font-size utilizando EM no exemplo acima!
+        -->
+    </body>
+</html>

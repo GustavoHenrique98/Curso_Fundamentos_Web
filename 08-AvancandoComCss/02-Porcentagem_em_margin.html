@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Unidades de medida</title>
+        <title> Porcentagem em margin </title>
         <style>
             html{
                 /*Equivale a 10px;*/
@@ -21,9 +21,26 @@
                 /* 30px */
                 font-size:3rem;
                 /* 30px */
+                font-size:50%;
             }
             p{
-                font-size:3em; /*equivale a 30px*/
+                font-size:3em;
+                /*equivale a 30px*/
+                width: 10em;
+                background-color:#ccc;
+            }
+
+            #porcentagem{
+                width:60%;
+                height: 500px;
+                background-color:yellow;
+            }
+            
+            #porcentagem p{
+                background:orange;
+                padding-top: 50%;
+                width: 50%;
+                font-size: 3rem;
             }
            
         </style>
@@ -34,14 +51,10 @@
         <p>
             Lorem ipsum <b> Texto em negrito </b>dolor sit, amet consectetur adipisicing elit. Repellendus ullam sit deleniti quis assumenda saepe est autem harum, odit quibusdam eveniet, ipsa quae ab illo exercitationem debitis consectetur corrupti voluptatibus.
         </p>
-        <!-- <div id="teste">
-            <p class="teste1">
-                testando fonte EM
-            </p>
-
-            <p class="teste2">
-                testando fonte 2
-            </p>
-        </div> -->
+        <div id="porcentagem">
+           <p>
+              %.
+           </p> 
+        </div>
     </body>
 </html>
