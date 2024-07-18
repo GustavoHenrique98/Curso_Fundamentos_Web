@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando variáveis em css</title>
+    <style>
+        html{
+            font-size: 62.5%;
+            --header-height:15rem;
+            --color:blue;
+            --tamanho:15rem;
+        }
+        header{
+            width: 100%;
+            background-color: rgba(255,0,0,0.5);
+            height: var(--header-height);
+            font-size: 2rem;
+            position: fixed;
+            top:0;
+            left: 0;
+        }
+        main{
+            min-height: calc(100vh - 15rem - 2rem);
+            background: #ccc;
+            font-size: 2rem;
+            margin-top:var(--header-height);
+        }
+        footer{
+            height: 10rem;
+            font-size: 2rem;
+            background-color: blue;
+        }
+        p{
+            color:var(--color);
+            font-size: var(--tamanho);
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <main>main</main>
+    <footer>footer</footer>
+
+    <p>
+        color formatada com variáveis
+    </p>
+</body>
+</html>

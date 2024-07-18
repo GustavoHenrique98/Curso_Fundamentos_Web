@@ -5,43 +5,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Unidades de medida</title>
         <style>
+           /*Unidades de medida REM e EM*
+             em: Se relaciona diretamente com o font-size do elemento pai.
+             rem : Unidade de medida que se relaciona com o font-size do elemento root(html)
+             abaixo temos um exemplo.
+           */
             html{
-                /*Equivale a 10px;*/
-                font-size:62.5%;
+                font-size: 62.5%; /*10px*/
             }
-
-            h1{
-                font-size:2.4em;
+            b{
+                color:red;
+                font-size: .5em; /*É igual metade do valor do font-size do elemento pai porque o elemento pai dele é o <p></p> que vale 30px*/
+                font-size:4rem; /* É igual a 40px referente aos 10px do html*/
             }
-            
-            
-            p b{
-                color: red;
-                font-size:1em;
-                /* 30px */
-                font-size:3rem;
-                /* 30px */
-            }
-            p{
-                font-size:3em; /*equivale a 30px*/
-            }
+           h1{
+            font-size: 2.4em; /*Refere-se a 24px*/
+           } 
+           p{
+            font-size: 3em; /*Refere-se a 20px*/
+           }
            
         </style>
     </head>
     <body>
-        <h1>Unidades de medida</h1>
-        <h2>EM</h2>
-        <p>
-            Lorem ipsum <b> Texto em negrito </b>dolor sit, amet consectetur adipisicing elit. Repellendus ullam sit deleniti quis assumenda saepe est autem harum, odit quibusdam eveniet, ipsa quae ab illo exercitationem debitis consectetur corrupti voluptatibus.
-        </p>
-        <!-- <div id="teste">
-            <p class="teste1">
-                testando fonte EM
-            </p>
+       <h1>Unidades de medida EM & Rem</h1>
+       <p>
+            Lorem ipsum dolor <b>Texto em negrito </b>sit amet consectetur adipisicing elit. Quas saepe, alias accusantium odio vero autem excepturi cupiditate praesentium repellendus perferendis dicta quam, deserunt facere corrupti a, et culpa adipisci fuga?
+       </p>
 
-            <p class="teste2">
-                testando fonte 2
-            </p>
-        </div> -->
+
+
     </body>
 </html>

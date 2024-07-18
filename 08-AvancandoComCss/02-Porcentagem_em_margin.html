@@ -5,56 +5,62 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Porcentagem em margin </title>
         <style>
+           /*Unidades de medida REM e EM*
+             em: Se relaciona diretamente com o font-size do elemento pai.
+             rem : Unidade de medida que se relaciona com o font-size do elemento root(html)
+             abaixo temos um exemplo.
+           */
             html{
-                /*Equivale a 10px;*/
-                font-size:62.5%;
+                font-size: 62.5%; /*10px*/
             }
 
             h1{
-                font-size:2.4em;
-            }
-            
-            
-            p b{
-                color: red;
-                font-size:1em;
-                /* 30px */
-                font-size:3rem;
-                /* 30px */
-                font-size:50%;
-            }
-            p{
-                font-size:3em;
-                /*equivale a 30px*/
-                width: 10em;
-                background-color:#ccc;
+             font-size: 2.4em; /*Refere-se a 24px*/
+            } 
+
+            b{
+                color:red;
+                font-size: .5em; /*É igual metade do valor do font-size do elemento pai porque o elemento pai dele é o <p></p> que vale 30px*/
+                font-size:3rem; /* É igual a 30px referente aos 3rem*10px do html*/
             }
 
-            #porcentagem{
-                width:60%;
-                height: 500px;
-                background-color:yellow;
-            }
+           p{
+            font-size: 3em; /*Refere-se a 20px*/
+            /*Podemos utilizar em com width relacionando a largura de acordo com o tamanho
+            do font-size do próprio elemento : ou seja o total da largura em EM * o total do tamanho 
+            do font-size em EM */
+            width:10em; /* 10em*3em px = 300px*/
+            background-color: #ccc;
             
-            #porcentagem p{
-                background:orange;
-                padding-top: 50%;
-                width: 50%;
-                font-size: 3rem;
-            }
+           }
+
+           .porcentagem{
+            width: 60%;
+            height: 500px;
+            background-color:yellow;
+            border: 1px solid black;
+            
+           }
+
+           .porcentagem p{
+            background-color: orange;
+            padding-top: 50%;
+            width: 50%;
+            font-size: 1rem;
+           }
            
         </style>
     </head>
     <body>
-        <h1>Unidades de medida</h1>
-        <h2>EM</h2>
-        <p>
-            Lorem ipsum <b> Texto em negrito </b>dolor sit, amet consectetur adipisicing elit. Repellendus ullam sit deleniti quis assumenda saepe est autem harum, odit quibusdam eveniet, ipsa quae ab illo exercitationem debitis consectetur corrupti voluptatibus.
-        </p>
-        <div id="porcentagem">
-           <p>
-              %.
-           </p> 
-        </div>
+       <h1>Porcentagem em Margin</h1>
+       <p>
+            Lorem ipsum dolor <b>Texto em negrito </b>sit amet consectetur adipisicing elit. Quas saepe, alias accusantium odio vero autem excepturi cupiditate praesentium repellendus perferendis dicta quam, deserunt facere corrupti a, et culpa adipisci fuga?
+       </p>
+
+       <div class="porcentagem">
+            <p> % </p>
+       </div>
+
+
+
     </body>
-</html>

@@ -5,21 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-      *{
+      body{
         margin: 0;
+        background: gray;
       }
-      body,html{
-        width: 100vw;
-        background-color: blue;
-        height:100%;
-      }
+      .testes{
+        border: 1px solid black;
+        width: 80%;
+        height: 600px;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        gap: 16px;
 
-      
+      }
+      .testItem{
+        background-color: blue;
+        width: 100vh;
+        height: 130vh;
+        
+      }
     </style>
 </head>
 <body>
-    <div>
-      testando
+    <div class="testes">
+      <div class="testItem">
+        item1
+      </div>
+
+      <div class="testItem">
+        item2
+      </div>
+
+      <div class="testItem">
+        item3
+      </div>
     </div>
+
+    <script src="teste.js"></script>
 </body>
 </html>

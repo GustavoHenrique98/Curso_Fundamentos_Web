@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:sans-serif
+}
+
+/*Topo do site */
+
+#topo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(33, 33, 33);
+    font-size: 1.2rem;
+    padding: 0.8rem 0rem;
+}
+#topo h1{
+    font-weight: 400;
+    color: white;
+}
+
+#nav_topo ul{
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+    padding-left: 20rem;
+}
+#nav_topo ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#53535c;
+    letter-spacing: 2px;
+}
+#nav_topo ul li a:hover{
+    color: white;
+    transition: 0.8s;
+}
+main img{
+    width: 100%;
+}
+
+#conteudo
