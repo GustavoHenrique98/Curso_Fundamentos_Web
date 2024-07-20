@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition abreviado</title>
+    <style>
+        html{
+            font-size: 10px;
+        }
+        div{
+            background-color:orange;
+            width: 20rem;
+            height: 10rem;
+            margin: 10rem auto;
+            /* transition-property:width , height, background-color;
+            transition-duration:1s , 2s , 2s;
+            transition-timing-function:(cubic-bezier(.79,.06,.16,.82));
+            transition-delay: 1s , 2s , 2s; */
+            
+            /*transition : property duration timing-function delay*/
+            transition: 
+            width 1s ease 1s, height 2s ease 2s, background-color 2s ease 2s;
+            cursor:pointer;
+        }
+        div:hover{
+            width: 50rem;
+            height: 40rem;
+            background-color: rgb(182, 9, 9);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        
+    </div>
+</body>
+</html>

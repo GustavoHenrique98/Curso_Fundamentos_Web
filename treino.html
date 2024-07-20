@@ -1,47 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html lang='pt-br'>
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Testes das aulas">
+    <meta name="author" content="Gustavo Henrique Pereira Silva">
+    <meta name="keywords" content="Treino | HTML | CSS">
+    <title> Treino de css</title>
     <style>
-      body{
+      html{
+        --color:red;
+        --color2:orange;
+        font-size:62.5%
+      }
+      *{
         margin: 0;
-        background: gray;
+        padding: 0;
       }
-      .testes{
-        border: 1px solid black;
-        width: 80%;
-        height: 600px;
-        margin: auto;
-        display: flex;
-        justify-content: space-around;
-        gap: 16px;
+      
+      #em{
+        background-color:var(--color);
+        font-size: 10em;
+        width: 3em;
+        height: 3em;
+        margin:2rem 0rem;
+      }
+      #em p{
+        background-color: var(--color2);
+        width:4em; /*400px referente a o font-size do elemento pai #em que é 10em = 400px*/
+        height: 4em;
+      }
 
+      #rem{
+        background-color: var(--color2);
+        font-size: 6rem;
+        margin: 8em 0em;
+        width: 10em;
+        height:10em;
       }
-      .testItem{
-        background-color: blue;
-        width: 100vh;
-        height: 130vh;
-        
-      }
+      
     </style>
-</head>
-<body>
-    <div class="testes">
-      <div class="testItem">
-        item1
+  </head>
+  <body>
+      <div id="em"> 
+       pai_EM
+        <p>
+          filho_EM
+        </p>
+
       </div>
 
-      <div class="testItem">
-        item2
-      </div>
+      <div id="rem"> 
+        <p>
+          Padding no bumbum
+        </p>
 
-      <div class="testItem">
-        item3
-      </div>
-    </div>
+     </div>
 
-    <script src="teste.js"></script>
-</body>
+
+
+
+  </body>
 </html>

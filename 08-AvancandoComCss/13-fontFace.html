@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font-face</title>
+    <style> 
+        @font-face{
+            font-family: nadia;
+            
+            src:
+            local('Nadia Serif'),
+            local('Nadia-Serif'),
+            url( '../08-AvancandoComCSS/fonts/nadia/nadia-serif.ttf') format('truetype'),
+            url('../08-AvancandoComCss/fonts/nadia/nadia-serif.woff') format('woff'),
+            url('../08-AvancandoComCss/fonts/nadia/nadia-serif.svg') format('svg');
+            font-weight:normal;
+            font-style:italic;            
+        }
+        h1{
+            font-family:nadia;
+        }
+        /* Basicamente podemos importar várias fontes personalizadas dentro do nosso projeto (arquivos de fonte ).
+         */
+    </style>
+</head>
+<body>
+    <h1>Font face</h1>
+
+</body>
+</html>
