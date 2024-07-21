@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+   --headerBackground:rgba(15, 15, 17, 0.952);
+   --white:#ffffff;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+#topo{
+    display: flex;
+    flex-direction: column;
+}
+
+#topo div{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color:var(--headerBackground);
+    padding: 0.8rem;
+    color: var(--white);
+
+}
+#topo div h1{
+    font-weight: normal;
+}
+#nav__topo ul{
+    display: flex;
+    list-style:none;
+    gap:2rem;
+    font-size: 1.2rem;
+}
+
+#nav__topo ul li a{
+    text-decoration: none;
+    color:rgb(121, 117, 117);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+
+#conteudo1{
+    margin-top: 5rem;
+    
+}
+#conteudo1__letreiro1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#conteudo1__letreiro1 h2{
+   font-size: 3rem;
+   margin-top: 3rem;
+   margin-bottom: 2rem;
+   text-align: center;
+   color: black;
+   font-weight: normal;
+}
+
+#conteudo1__letreiro1 p{
+  text-align: center;
+  width: 80%;
+  line-height: 3rem;
+  font-size: 1.3rem;
+  color: #696565;
+  
+}
+
+#conteudo1__modelos{
+    margin: 5rem 0rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.modelos{
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #696565;
+    letter-spacing: 2px;
+}
+
+.modelos img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#conteudo2{
+    background-image:url('../img/bg_detalhe.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    padding: 10rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#conteudo2__letreiro{
+   width: 80%;
+   display: flex;
+   flex-direction: column;
+   color: white;
+   gap: 32px;
+}
+
+#conteudo2__letreiro h2{
+    font-size: 3rem;
+}
+
+#conteudo2__letreiro p{
+    font-size: 1.5rem;
+}
+
+
+footer{
+    text-align: center;
+    background: var(--headerBackground);
+    padding: 1rem 0rem;
+    letter-spacing: 3px;
+    font-size: 1.3rem;
+    color:rgb(121, 117, 117);
+}
