@@ -1,13 +1,3 @@
-@media screen and (max-width:726px){
-    #topo div{
-        flex-direction: column;
-        gap: 16px;
-    }
-    #topo div ul{
-        font-size: 0.8rem;
-    }
-}
-
 @media screen and (max-width:866px){
     #topo div{
         flex-direction: column;
@@ -30,5 +20,15 @@
     .modelos img{
         width: 100%;
 
+    }
+}
+
+@media screen and (max-width:726px){
+    #topo div{
+        flex-direction: column;
+        gap: 16px;
+    }
+    #topo div ul{
+        font-size: 0.8rem;
     }
 }

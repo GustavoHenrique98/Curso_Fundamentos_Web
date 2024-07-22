@@ -1,0 +1,11 @@
+@media screen and (max-width:780px){
+    #header__topo{
+        flex-direction: column;
+        gap: 32px;
+        padding-bottom: 1rem;
+    }
+    #nav__topo ul{
+        gap: 40px;
+        font-size: 0.8rem;
+    }
+}
