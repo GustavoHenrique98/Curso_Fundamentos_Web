@@ -8,4 +8,44 @@
         gap: 40px;
         font-size: 0.8rem;
     }
+
+    #banner{
+        flex-direction: column-reverse;
+        gap: 16px;
+        padding: 5rem 0rem;
+    }
+    #banner__img{
+        width: 100%;
+    }
+    #banner__texto{
+        width: 100%;
+        line-height: 3rem;
+    }
+    #banner__texto h1{
+        font-size: 1.5rem;
+    }
+
+    #conteudo__cursos{
+        flex-direction: column;
+    }
+    #cursos h2{
+        font-size: 2rem;
+    }
+    .cont__cursos{
+        width: 80%;
+    }
+    
+    #escola{
+        flex-direction: column;
+        padding: 3rem ;
+    }
+    #escola__foto{
+        width: 100%;
+    }
+
+    #escola article{
+        width: 100%;
+        text-align: center;
+    }
+
 }
