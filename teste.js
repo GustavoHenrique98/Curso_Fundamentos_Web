@@ -1,19 +1,66 @@
-// 84) Crie um programa que leia o nome e a idade de 9 pessoas e guarde esses
-// valores em dois vetores, em posições relacionadas. No final, mostre uma listagem
-// contendo apenas os dados das pessoas menores de idade.
 
 
-let nomes = new Array(3);
-let idade = new Array(3);
-for(let i=0;i<nomes.length;i++){
-    nomes[i] = prompt(`Digite o nome da ${i+1}º pessoa`);
-    idade[i] = parseInt(prompt(`Digite a idade da ${i+1}º pessoa`));
+// class Caneta {
+    
+//     //Atributos da classe
+//     nome;
+//     ponta;
+//     tampada;
+//     //Método construtor para passarmos os valores por parâmetros na hora de instanciar a classe.
+//     constructor(nome,ponta,tampada){
+//        this.nome = nome; 
+//        this.ponta = ponta;
+//        this.tampada  = tampada;
+//      }
+//      rabiscar(){
+//           if(this.tampada === true){
+//                 console.log("A caneta está tampada, não pode rabiscar");
+//           }else{
+//                 console.log("A caneta está rabiscando");
+//            }
+//       }
+
+//       tampar(){
+//            this.tampada = true;
+//       }
+
+//       destampar(){
+//            this.tampada = false;
+//       }
+
+// }
+
+
+// // Criando uma caneta a partir da classe caneta
+
+// const caneta1 = new Caneta("Bic",1.3,true);
+
+// /*Tentando rabiscar com a caneta tampada  utilizando o método rabiscar  */
+// caneta1.rabiscar();
+
+// /* Tentando rabiscar com a caneta após destampar com o método destampar*/
+// caneta1.destampar()
+
+// /* Rabiscando após destampar a caneta */
+// caneta1.rabiscar();
+
+function line(){
+    console.log("---------------------------------------------------------------------------------------------")
+}
+
+let pessoa1 = {
+    nome:"Gustavo",
+    sobreNome:"Henrique"
 }
 
 
-for(let i =0; i < idade.length ;i++){
-    if(idade[i]<18){
-        console.log(`Nome : ${nomes[i]} |   idade : ${idade[i]} `);
-    }
-}
+ 
+pessoa2.nome = "heveny";
+
+console.table(pessoa1);
+
+line();
+
+console.table(pessoa2);
+
 
