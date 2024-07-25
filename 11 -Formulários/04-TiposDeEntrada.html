@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de entradas de dado</title>
+    <style>
+        textarea{
+            resize:none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tipos de entrada de dados</h1>
+     <form action="#" >
+        <fieldset>
+            <legend>Inputs</legend>
+            <!-- Inputs do tipo email forçam o usuário a digitar o email. -->
+            <input type="email" name="email" id="email" placeholder="digite seu email">
+            <br><br>
+            <label for="qtd_filhos">Quantidade de filhos</label> <br>
+            <input type="number" name="qtd_filhos" id="qtd_filhos" min="1" max="10">
+             
+            <br><br>
+            <!-- O input date serve para escolhermos uma data para o formulário e o atributo min e max se comporta da mesma forma-->
+            <label for="inputdate">Data mínima</label>
+            <input type="date" name="datas" id="inputdate" min="2024-07-15"   max="2024-08-20">
+            
+            <br><br>
+            <label>
+                <input type="radio" class="inputradio" name="atvExtra" value="masculino"> M 
+            </label>
+
+            <label>
+                <input type="radio" class="inputradio" name="atvExtra" value="feminino"> F
+            </label>
+
+            
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Área de interesse</legend>
+            
+            <label>Javascript</label>
+            <input type="checkbox" name="interesse" id="javascript" value="javascript"><br>
+            
+            <label >HTML</label>
+            <input type="checkbox" name="interesse" id="HTML" value="html"><br>
+            
+            <label>CSS</label>
+            <input type="checkbox" name="interesse" id="CSS" value="css"><br>
+            
+            
+            <br><br>
+            <label>
+                Escolha uma linguagem 
+                <select name="linguagem" required multiple size=""> 
+                    <option value="escolha">Selecione um item da lista</option>
+                    <optgroup label="front-end">
+                        <option value="html">html</option>
+                        <option value="css">css</option>
+                    </optgroup>
+                    
+                    <optgroup label="backend">
+                        <option value="java">Java</option>
+                        <option value="python">Python</option>
+                    </optgroup>
+                    
+                </select>
+            </label>
+
+            <input type="text" list="linguagemList" name="listasLinguagem">
+            <datalist id="linguagemList">
+                <option value="html">
+                <option value="css">
+                <option value="js">
+                <option value="java">
+                <option value="Python">
+            </datalist>
+
+        </fieldset>
+        
+        <!-- max length define a quantidade máxima de caracteres para inputs do tipo texto -->
+        <fieldset>
+            <legend>Mensagem</legend>
+            <textarea name="msg" rows="10" cols="30" maxlength="100"> </textarea>
+            
+            <br><br>
+            
+            <textarea rows="10" cols="30" maxlength="100" disabled>
+                contrato de utlização
+                 1.1 REGRA1
+                 1.2 REGRA2
+            </textarea>
+            <input type="checkbox"checked id="termos" name="termos" value="termosAceitos">
+            <label for="termos">Li e aceito os termos</label>
+
+            <br><br>
+            <input type="file" id="inputArquivo">
+
+        </fieldset>
+
+        <!-- serve para colocar dados escondidos do usuário -->
+        <input type="hidden" value="123124142">
+        
+        <br><br>
+        <!-- Inputs do tipo submit servem para enviar os dados do formulário para processamento -->
+        <input type="submit" value="mandar">
+        <input type="button" value="typeBUtton">
+
+        <button type="submit">Mandar com tag button</button>
+        <button type="button"> <b>BotãoQualquer</b> </button>
+
+
+        <input type="search" name="procurar">
+
+        <input type="range" min="0" max="10" step=".5">
+        
+        <input type="time" >
+
+        <br><br> 
+        <input type="color">
+     </form>
+</body>
+
+</html>

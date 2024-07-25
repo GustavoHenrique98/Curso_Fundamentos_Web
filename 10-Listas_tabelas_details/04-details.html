@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+
+    <style>
+        details{
+            color:red;
+            background-color: rgb(212, 209, 209);
+            margin-bottom: 1em;
+            padding: 1.5em;
+        }
+        summary{
+            cursor: pointer;
+        }
+
+        /*Mudando a estilização quando o details abrir*/
+        details[open]{
+            transition-duration:2s;
+            color: black;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Curso web design</h1>
+    <details open>
+        <summary>Pré requisitos</summary>
+        <p>
+            Para fazer esse curso é necessário conhecimento de sistema operacional
+        </p>
+    </details>
+    
+    <!-- O atributo open deixa o details por padrão aberto. -->
+
+    <details open>
+        <summary>Carga horária</summary>
+        <p>
+            180 Horas.
+        </p>
+    </details>
+
+</body>
+</html>
