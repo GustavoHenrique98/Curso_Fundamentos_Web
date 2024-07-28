@@ -5,122 +5,202 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tipos de entradas de dado</title>
     <style>
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+        select{
+            width: fit-content;
+        }
+
+        datalist{
+            width:fit-content;
+        }
+
         textarea{
+            width:300px;
             resize:none;
         }
     </style>
 </head>
 <body>
     <h1>Tipos de entrada de dados</h1>
-     <form action="#" >
-        <fieldset>
-            <legend>Inputs</legend>
-            <!-- Inputs do tipo email forçam o usuário a digitar o email. -->
-            <input type="email" name="email" id="email" placeholder="digite seu email">
-            <br><br>
-            <label for="qtd_filhos">Quantidade de filhos</label> <br>
-            <input type="number" name="qtd_filhos" id="qtd_filhos" min="1" max="10">
-             
-            <br><br>
-            <!-- O input date serve para escolhermos uma data para o formulário e o atributo min e max se comporta da mesma forma-->
-            <label for="inputdate">Data mínima</label>
-            <input type="date" name="datas" id="inputdate" min="2024-07-15"   max="2024-08-20">
+     <form action="#">    
+         <fieldset>
+            <legend>Introdução</legend>
+            <!-- Input do tipo texto aceita qualquer tipo de texto -->
+            <div>
+                <label for="texto">Texto:</label>
+                <input type="text" name="text" id="text" placeholder="Digite qualquer coisa" required>
+            </div>
             
-            <br><br>
-            <label>
-                <input type="radio" class="inputradio" name="atvExtra" value="masculino"> M 
-            </label>
+            <!-- Input type email aceita apenas strings no formato de emails -->
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+            
+            <!-- Input type number serve para selecionarmos um número onde podemos incrementar ou decrementar o valor -->
+             <!-- Podemos utilizar o atributo min e max para definirmos o valor minimo e máximo que este input aceita -->
+            <div>
+                <label for="number">Number:</label>
+                <input type="number" name="number" id="number" min="1" max="10" value="1" required>
+            </div>
+            
+            <!--Input type date serve para colocarmos uma data e também
+                Possibilita de setarmos uma data mínima e máxima para o usuário escolher
+                utilizando min e max no formato de data inglês
+            -->
+            <div> 
+                <label for="data">Data:</label>
+                <input type="date" name="data" min="2024-07-28" max="2024-08-30" required>
+            </div>
+            
 
-            <label>
-                <input type="radio" class="inputradio" name="atvExtra" value="feminino"> F
-            </label>
+            <!--
+             Input type radio serve para criarmos uma marcação única 
+             para utilizarmos o input type radio precisamos definir o mesmo name 
+             para os mesmos inputs para assima  seleção única funcionar
+            -->
+            <div>
+                <p>Possui atividade extra?</p>
+
+                <input type="radio" name="atv_extra" value="sim" id="sim" checked>
+                <label for="sim">Sim</label>
+
+                <input type="radio" name="atv_extra" value="não" id="nao">
+                <label for="nao">Não</label> 
+
+            </div>
 
             
-        </fieldset>
+            <fieldset>
+                <legend>Área de interesse</legend>
 
-        
-        <fieldset>
-            <legend>Área de interesse</legend>
-            
-            <label>Javascript</label>
-            <input type="checkbox" name="interesse" id="javascript" value="javascript"><br>
-            
-            <label >HTML</label>
-            <input type="checkbox" name="interesse" id="HTML" value="html"><br>
-            
-            <label>CSS</label>
-            <input type="checkbox" name="interesse" id="CSS" value="css"><br>
-            
-            
-            <br><br>
-            <label>
-                Escolha uma linguagem 
-                <select name="linguagem" required multiple size=""> 
-                    <option value="escolha">Selecione um item da lista</option>
-                    <optgroup label="front-end">
-                        <option value="html">html</option>
-                        <option value="css">css</option>
-                    </optgroup>
+                <!-- Com o input type checkbox podemos selecionar várias opções como dados de entrada. -->
+                <div> 
+                    <input type="checkbox" id="html" value="html" name="interesse">
+                    <label for="html">HTML</label>
+
+                    <input type="checkbox" id="css" value="css" name="interesse">
+                    <label for="css">CSS</label>
+
+                    <input type="checkbox" id="python" value="python" name="interesse">
+                    <label for="python">Python</label>
+
+                    <input type="checkbox" id="java" value="java" name="interesse">
+                    <label for="java">Java</label>
+
+                    <input type="checkbox" id="springboot" value="springboot" name="interesse">
+                    <label for="springboot">Springboot</label>
+
+                </div>
+
+                <!-- Com o input type select , podemos fazer o usuário selecionar algumas opções também 
+                    além de que podemos organizar as informações em grupos de opções  
+
+
+                    nota o atributo multiple permite selecionar vários valores dentro de um select
+                    utilizando o ctrl .
                     
-                    <optgroup label="backend">
-                        <option value="java">Java</option>
-                        <option value="python">Python</option>
-                    </optgroup>
-                    
-                </select>
-            </label>
+                    o atributo size define quantas linhas vão  aparecer da lista do select.
+                -->
+               <label>
+                    escolha uma linguagem
+                   <select name="linguagem" required multiple  size="4">
+                       
+                       <option value="">Seleciona uma</option>
+                        
+                        <optgroup label="front-end">
+                            <option value="javascript">Javascript</option>
+                            <option value="html">Html</option>
+                            <option value="css">Css</option>
+                        </optgroup>
 
-            <input type="text" list="linguagemList" name="listasLinguagem">
-            <datalist id="linguagemList">
-                <option value="html">
-                <option value="css">
-                <option value="js">
-                <option value="java">
-                <option value="Python">
-            </datalist>
+                        <optgroup label="back-end">
+                            <option value="java">Java</option>
+                            <option value="python">Python</option>
+                        </optgroup>
 
-        </fieldset>
-        
-        <!-- max length define a quantidade máxima de caracteres para inputs do tipo texto -->
-        <fieldset>
-            <legend>Mensagem</legend>
-            <textarea name="msg" rows="10" cols="30" maxlength="100"> </textarea>
+                    </select>
+                </label>
+                 
+
+                
+                <!-- Com o input type text com o atributo list fazendo referencia a uma datalist com id 
+                    podemos otimizar a busca por opções , funciona como um select mais otimizado 
+                    que busca as palavras chaves das options e faz selecionar
+
+                -->
+                <input type="text" list="linguagemList">
+                <datalist id="linguagemList" >
+                    <option value="html">
+                    <option value="CSS">
+                    <option value="Javascript">
+                    <option value="Java">
+                    <option value="Python">
+                    <option value="Php">
+                        
+                </datalist>
+
+            </fieldset>
+
+           
+
+            <fieldset>
+                <legend>Entre com sua mensagem</legend>
+                <textarea name="msg" cols="30" rows="12" maxlength="255" ></textarea>
+
+
+                <textarea name="msg" cols="50" rows="8" maxlength="255" readonly>
+                    Contrato de utilização 
+                    1.1 Regra1
+                    1.2 Regra2
+
+
+                </textarea>
+                <div>
+                    <!-- o atributo checked serve para os checkboxs ficarem automaticamente marcados já na inicialização da página -->
+                    <input type="checkbox" name="liEaceito" id="contrato" checked>
+                    <label for="contrato">Aceitar termos</label>
+                </div>
+                <label for="fileInput">Selecione seu currículo</label>
+                <input type="file" name="enviarArquivo" id="fileInput" >
+            </fieldset>
+           
+            <!-- Input type submit serve para enviarmos os dados do formulário para o servidor -->
+             <!--  O button type="submit" faz a mesma coisa que o submit ja sem o atributo é apenas um botão qualquer -->
+            <div>
+                <input type="submit" value="enviar dados">
+                
+                <input type="button" value="botão qualquer">
+
+                <button type="submit">Botão com submit faz a mesma coisa que input type submit</button>
+
+                <button type="button">Apenas um botão sem ação</button>
+
+            </div>
+
+            <!-- Input type search usado para fazer buscas podemos usar o autofocus em vários inputs 
+                já pra ele ser selecionado assim que a página carregar 
+            -->
+
+            <div>
+                <input type="search" name="buscar" placeholder="faça uma busca" autofocus>
+            </div>
+
+
+            <!-- Input type range serve para criarmos um slide que seleciona um valor  -->
+             <input type="range" name="range" id="numeros" step="2" min="0" max="10">
+
+            <!-- Input type time serve para selecionarmos uma hora e podemos utilizar min e max nele -->
+            <input type="time" name="horario" id="horario" min="10:30" max="17:30">
+
+            <!-- input type color serve para inserirmos uma color-->
+            <input type="color" name="cores" id="color" >
             
-            <br><br>
-            
-            <textarea rows="10" cols="30" maxlength="100" disabled>
-                contrato de utlização
-                 1.1 REGRA1
-                 1.2 REGRA2
-            </textarea>
-            <input type="checkbox"checked id="termos" name="termos" value="termosAceitos">
-            <label for="termos">Li e aceito os termos</label>
-
-            <br><br>
-            <input type="file" id="inputArquivo">
-
         </fieldset>
-
-        <!-- serve para colocar dados escondidos do usuário -->
-        <input type="hidden" value="123124142">
-        
-        <br><br>
-        <!-- Inputs do tipo submit servem para enviar os dados do formulário para processamento -->
-        <input type="submit" value="mandar">
-        <input type="button" value="typeBUtton">
-
-        <button type="submit">Mandar com tag button</button>
-        <button type="button"> <b>BotãoQualquer</b> </button>
-
-
-        <input type="search" name="procurar">
-
-        <input type="range" min="0" max="10" step=".5">
-        
-        <input type="time" >
-
-        <br><br> 
-        <input type="color">
      </form>
 </body>
 

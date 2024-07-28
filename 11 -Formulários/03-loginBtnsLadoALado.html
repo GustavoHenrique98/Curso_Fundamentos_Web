@@ -3,24 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form login</title>
+    <title>Form Login Btn lado a lado</title>
     <link rel="stylesheet" href="login2.css">
 </head>
 <body>
-    <h1>Login</h1>
-    <form action="#" method="get">
+    <form>
         <fieldset>
             <legend>Entre com seus dados de acesso</legend>
-            <label for="username">Usuário</label>
-            <input type="text" name="user" id="username" placeholder="Digite seu usuário" required autofocus>
+            <label for="username">Login</label>
+            <input type="text" name="username" id="username" placeholder="Digite o nome de usuário">
             
             <label for="password">Senha</label>
-            <input type="password" name="pass" id="password" placeholder="Digite sua senha" required>
-            <div id="btn__layouts">
-                <input type="reset" value="clear" >
-                <input type="submit" value="send" >
-            </div>
+            <input type="password" name="password" id="password" placeholder="Digite sua senha">
 
+            <div>
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Login">
+            </div>
         </fieldset>
     </form>
 </body>

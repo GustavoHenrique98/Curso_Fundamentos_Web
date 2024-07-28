@@ -1,64 +1,71 @@
 <!DOCTYPE html>
-<html lang='pt-br'>
+<html lang="pt-br">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Testes das aulas">
-    <meta name="author" content="Gustavo Henrique Pereira Silva">
-    <meta name="keywords" content="Treino | HTML | CSS">
-    <title> Treino de css</title>
-    <style>
-      html{
-        --color:red;
-        --color2:orange;
-        font-size:62.5%
-      }
-      *{
-        margin: 0;
-        padding: 0;
-      }
-      
-      #em{
-        background-color:var(--color);
-        font-size: 10em;
-        width: 3em;
-        height: 3em;
-        margin:2rem 0rem;
-      }
-      #em p{
-        background-color: var(--color2);
-        width:4em; /*400px referente a o font-size do elemento pai #em que é 10em = 400px*/
-        height: 4em;
-      }
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="author" content="Gustavo Henrique Pereira Silva">
+     <meta name="description" content="Formulário básico html">
+     <meta name="keywords" content="Formulario | cadastro | login">
+     <title>Login</title>
+     <style>
+        body{
+          height:100vh;
+          display: flex;
+          justify-content: center;
+          align-items:center;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        } 
+        form{
+          border: 1px solid black;
+          padding: 1rem;
+          background: linear-gradient(90deg,purple,black);
+        }
+        form fieldset{
+          display: flex;
+          flex-direction: column;
+          border: none;
+          gap: 1.3rem;
+        }
+        fieldset legend{
+          text-align: center;
+          padding:1rem 0rem;
+          font-size: 1.3rem;
+          font-weight: bold;
+          color: white;
+        }
+        label{
+          color: white;
+        }
 
-      #rem{
-        background-color: var(--color2);
-        font-size: 6rem;
-        margin: 8em 0em;
-        width: 10em;
-        height:10em;
-      }
-      
-    </style>
+        input[type="submit"]{
+          padding: 0.3rem 0rem;
+          background-color: rgb(61, 47, 47);
+          color: white;
+        }
+        
+        input[type="submit"]:hover{
+          transition:2s;
+          cursor: pointer;
+          background:linear-gradient(90deg,black,purple);
+        }
+     </style>
   </head>
   <body>
-      <div id="em"> 
-       pai_EM
-        <p>
-          filho_EM
-        </p>
+    <form action="#" method="post">
+      <fieldset>
+          <legend>Digite seus dados </legend>
+          <label for="username">Username:</label>
+          <input type="text" name="username" id="username" placeholder="Digite o nome de usuário" required>
 
-      </div>
+          <label for="Password" name="Password">Password:</label>
+          <input type="password" name="password" id="password" placeholder="Digite sua senha" required>
 
-      <div id="rem"> 
-        <p>
-          Padding no bumbum
-        </p>
-
-     </div>
+          <input type="submit" value="Login">
+      </fieldset>
 
 
 
-     <script src="teste.js"></script>
+    </form>
+
   </body>
 </html>
