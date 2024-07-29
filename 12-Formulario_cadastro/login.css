@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    --azul:#3a68b7;
+}
+
+body{
+    font-family: "Roboto" , Arial, Helvetica , sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: var(--azul);
+}
+
+form{
+    width: 45%;
+    border-left:5px solid rgb(26, 91, 156);
+    border-right:5px solid rgb(26, 91, 156);
+    color: var(--azul);
+    padding: 1.5rem;
+    background-color: white;
+    
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 1.1rem;
+}
+
+legend{
+    font-size: 1.5rem;
+    padding: 1.3rem 0rem;
+}
+
+#usuario, #senha , #email{
+    border: none;
+    border-bottom:1px solid  var(--azul);
+    outline: none;
+    padding: .5rem 0rem; 
+    font-size: 1rem;
+    transition: .5s;
+}
+
+#usuario:valid:focus , #senha:valid:focus , #email:valid:focus {
+    padding-left: 1rem;
+    border-bottom: 1px solid green;
+}
+
+#usuario:invalid:focus , #senha:invalid:focus , #email:invalid:focus {
+    padding-left: .5rem;
+    border-bottom: 1px solid red;
+}
+
+label{
+    color: black;
+}
+
+#conteiner_btns{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+#btn__login{
+    padding: 10px;
+    background-color: var(--azul);
+    color: white;
+    border: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btn__cadastro{
+    text-decoration: none;
+    color: var(--azul);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+#esqueceuSenha{
+    display: inline-block;
+    margin-left: auto;
+    font-size: .9rem;
+    color: var(--azul);
+}
+
+
+
+
+/*Parte do cadastro*/
+
+#btn__registro{
+    padding: 10px;
+    background-color: var(--azul);
+    color: white;
+    border: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#conteiner_btns2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#conteiner_btns2 span{
+    color: black;
+}
+
+
+/* FIM! */
+
+
+@media screen and (max-width:607px){
+   form{
+    width: 90%;
+   }
+}
