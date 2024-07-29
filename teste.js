@@ -1,10 +1,11 @@
-const express = require('express');
-const app = express();
+let listas  = ['João','Carlos','Gustavo','Maria'];
+let numeros = [1,2,3,4,5,6,7,8,9,10];
 
-app.get('/',(req,res)=>{
-    res.sendFile('treino.html', {root: __dirname});
+
+
+listas.forEach(e =>{
+    if(e ==="Gustavo"){
+        console.log(e);
+    }
 })
 
-app.listen(3000,()=>{
-    console.log(`Servidor rodando em hhtp://localhost:3000/`);
-})
